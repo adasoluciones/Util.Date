@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{528D1631-8894-411C-A7AB-E73B4F9481A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ada</RootNamespace>
+    <AssemblyName>Util.Date</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Util.Date.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Data.DBConnector, Version=2.6.2.0, Culture=neutral, PublicKeyToken=2452f4aa82c6d2c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Data.DBConnector.2.6.2.0\lib\net35\Data.DBConnector.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Data.Json, Version=1.0.0.0, Culture=neutral, PublicKeyToken=934fe684c1a6c072, processorArchitecture=MSIL">
+      <HintPath>..\packages\Data.Json.1.0.0.0\lib\net35\Data.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Data.Notifications, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0d9bae89124913f6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Data.Notifications.1.2.3.0\lib\net35\Data.Notifications.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Framework.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=f8f7920de1ae00a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Configuration.1.2.0.0\lib\net35\Framework.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Framework.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=1a9f741adb8945ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Core.1.1.0.0\lib\net35\Framework.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Framework.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a9ad0149b9b5f59b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Framework.Extensions.1.0.0.0\lib\net35\Framework.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Util.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=13413504944a6ec8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Util.Core.1.0.0.0\lib\net35\Util.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Util.FileMonitor, Version=1.0.2.1, Culture=neutral, PublicKeyToken=cce9a8bd2757fac3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Util.FileMonitor.1.0.2.1\lib\net35\Util.FileMonitor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Util.Object, Version=1.0.2.0, Culture=neutral, PublicKeyToken=f724ee3e342f3128, processorArchitecture=MSIL">
+      <HintPath>..\packages\Util.Object.1.0.2.0\lib\net35\Util.Object.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\Util\Date\Holiday\Algorithms\AlgoritmosFeriado.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\FeriadoFactory.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\Business\FeriadoNegocio.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\Business\IFeriadoNegocio.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\DAO\FeriadoDAO.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\TO\EstadoFeriado.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\TO\FeriadoTO.vb" />
+    <Compile Include="Framework\Util\Date\Holiday\TO\TipoAlgoritmo.vb" />
+    <Compile Include="Framework\Util\Date\FechaFactory.vb" />
+    <Compile Include="Framework\Util\Date\IFecha.vb" />
+    <Compile Include="Framework\Util\Date\Fecha.vb" />
+    <Compile Include="Framework\Util\Date\TO\EstadoFecha.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Util.Date.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
